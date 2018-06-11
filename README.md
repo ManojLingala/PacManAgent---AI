@@ -1,5 +1,5 @@
 # PacManAgent---AI
-Participated at University level competition and secured 52nd position out-of 252 teams .
+Participated in University level competition and secured 52nd position out-of 252 teams .
 
 Brief Description :
 
@@ -26,10 +26,15 @@ This agent is designed to safeguard the territory By estimating the position of 
 
 Steps -Code walkthrough: 
 1.Initialises the game state with agent index , enemy index, positions <<legal>>, toggle flag , normalising the beliefs of the defensive agent with SET to 1 assuming the agent is not having any knowledge-of the state and can be in any position.
+
 2. GameState and enemy objects are been sent to the legal move method which can be used to draw how pacman can move by looking at all the possible successor positions.
+
 3. This filtered observation method provides more details about the position of an enemy that recorded beyond the noisy distance reading so that the true position can be narrowed down significantly.
-4. Chooses the best Action based on the Maxi and Expectimax function and the movement is from the Max score of the Avg weighted score of the chance node which is Called for each of the enemy agent and use maximize function for next level
-5. Invaders distance is used to get the enemy distance in case if the agent is beyond the range then we are going to return the most likely belief of the location
+
+4. Chooses the best Action based on the Maxi and Expectimax function and the movement is from the Max score of the Avg weighted score of the chance node which is Called for each of the enemy agent and use maximize function for next level.
+
+5. Invaders distance is used to get the enemy distance in case if the agent is beyond the range then we are going to return the most likely belief of the location.
+
 6. Defensive agent is implemented as mentioned in the above steps. 
 
 Execution:
